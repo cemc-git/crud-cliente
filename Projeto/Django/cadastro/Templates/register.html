@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+</head>
+<body>
+	<form action="register" method="post">
+
+		{%csrf_token%},
+		<h2>username</h2>
+		<input type="text" name="username" placeholder="username"><br>
+		<h2>seu nome</h2>
+		<input type="text" name= "nome" placeholder="nome"><br>
+		<h2>endereço</h2>
+		<input type="text" name= "endereço" placeholder="endereço"><br>
+		<h2>telefone</h2>
+		<input type="phone" name= "telefone" placeholder="telefone"><br>
+		<h2>data de nascimento</h2>
+		<input type="date" name= "data_de_nascimento" placeholder="data_de_nascimento"><br>
+		<input type="submit">
+</body>
+</html>
